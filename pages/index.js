@@ -51,6 +51,8 @@ const Home = () => {
             flex-wrap: wrap;
             max-width: 800px;
             margin-top: 3rem;
+            margin-left: auto;
+            margin-right: auto;
           }
           .card {
             margin: 1rem;
