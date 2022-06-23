@@ -3,15 +3,17 @@ import Image from 'next/image';
 import { Text, useColorModeValue } from '@chakra-ui/react';
 import styled from '@emotion/styled';
 
-const LogoBox = styled.span`
-  bg="pink";
+const Style = styled.span`
   font-weight: bold;
   font-size: 18px;
   display: inline-flex;
   align-items: center;
   height: 30px;
-  line-height: 20px;
+  line-height: 30px;
   padding: 10px;
+  p {
+    padding: 2px;
+  }
   img {
     transition: 200ms ease;
   }
@@ -21,18 +23,18 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-    const logo_img = `/logos/logo${useColorModeValue('-red', '-blue')}.png`;
+    const logo_img = `/logos/logo${useColorModeValue('-white', '-black')}.png`;
     return (
         <Link href="/">
             <a>
-                <LogoBox>
+                <Style>
                     <Image src={logo_img} alt="footprint" width={20} height={20} />
                     <Text color={useColorModeValue('gray.800', 'whiteAlpha.900')}
                         fontFamily='M PLUS Rounded 1c", sans-serif'
-                        fontWeight='bold'ml={3}>
-                        Tenshi
+                        fontWeight='bold'ml={15}>
+                        <p>Tenshi</p>
                     </Text>
-                </LogoBox>
+                </Style>
             </a>
         </Link>
     );

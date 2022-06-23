@@ -1,7 +1,5 @@
-import NextLink from 'next/link'
-import { MdHome } from "react-icons/md"
 import Header from '../components/header'
-import { Box, Heading, Container, Divider, Button} from '@chakra-ui/react'
+import { Box, Heading, Container, Divider} from '@chakra-ui/react'
 import Homebutton from '../components/HomeButton'
 
 
