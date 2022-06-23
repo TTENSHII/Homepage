@@ -12,9 +12,9 @@ const Navbarbutton = () => {
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: 20, opacity: 0 }}
         transition={{ duration: 0.2 }}>
-        <IconButton variant='outline' colorScheme={useColorModeValue('black', 'Gray')}
-          icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
-          onClick={toggleColorMode} _hover={{ color: 'white' }} />
+        <IconButton variant='outline' colorScheme={useColorModeValue(undefined, undefined)}
+          icon={useColorModeValue(<MoonIcon />, <SunIcon />)} color={useColorModeValue('grey', 'grey')}
+          onClick={toggleColorMode} _hover={{ color: useColorModeValue('black', 'white') }} />
       </motion.div>
     </AnimatePresence>
   )

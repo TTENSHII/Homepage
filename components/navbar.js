@@ -2,7 +2,7 @@ import Logo from './logo'
 import NextLink from 'next/link'
 import { IoLogoGithub } from 'react-icons/io5'
 import { Container, Box, HStack } from '@chakra-ui/react';
-import Navbarbutton from './navbarButton'
+import ThemeButton from './navbarThemeBtn'
 import NavbarList from './navbarList'
 import LinkItem from './linkItem'
 
@@ -21,7 +21,7 @@ const Navbar = ( { path }) => {
                 </HStack>
 
                 <Box display="flex" justifyContent="space-between" alignItems="center">
-                    <Navbarbutton />
+                    <ThemeButton />
                     <NavbarList />
                 </Box>
             </Box>
