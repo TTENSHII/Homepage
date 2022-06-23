@@ -11,7 +11,7 @@ const Style = styled.span`
   height: 30px;
   line-height: 30px;
   padding: 10px;
-  p {
+  mytext {
     padding: 2px;
   }
   img {
@@ -32,7 +32,7 @@ const Logo = () => {
                     <Text color={useColorModeValue('gray.800', 'whiteAlpha.900')}
                         fontFamily='M PLUS Rounded 1c", sans-serif'
                         fontWeight='bold'ml={15}>
-                        <p>Tenshi</p>
+                        <mytext>Tenshi</mytext>
                     </Text>
                 </Style>
             </a>

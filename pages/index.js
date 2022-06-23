@@ -6,7 +6,7 @@ const Home = () => {
         <div className="container">
         <Header title="index" />
         <h1 className="title">
-            HELLO <awesome>THERE</awesome><br></br>
+            HELLO <rainbow>THERE</rainbow><br></br>
             <notimplemented>Home is not implemented</notimplemented>
         </h1>
         <div className="grid">
@@ -14,12 +14,12 @@ const Home = () => {
                 <h3>About &rarr;</h3>
                 <p>Go to the about page</p>
             </a>
-            <a href="/projects" className="card">                  <h3>Projects &rarr;</h3>
+            <a href="/projects" className="card"><h3>Projects &rarr;</h3>
                 <p>Visit all my projects</p>
             </a>
         </div>
         <style jsx>{`
-          awesome {
+          rainbow {
             color: inherit;
             text-decoration: none;
             animation: color-change 10s infinite;
@@ -95,6 +95,6 @@ const Home = () => {
         `}</style>
       </div>
     );
-  }
+}
 
 export default Home;

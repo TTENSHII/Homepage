@@ -14,8 +14,7 @@ const components = {
 }
 
 const fonts = {
-    heading: 'Sora, Tahoma, sans-serif',
-    body: 'Montserrat, Verdana, sans-serif'
+    global : '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto'
 };
 
 const colors = {

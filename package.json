@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/TTENSHII/Homepage#readme",
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.2",
     "@chakra-ui/react": "^2.2.1",
     "next": "^12.1.6",
     "react": "^18.2.0",
