@@ -11,6 +11,9 @@ const NavbarList = () => {
                     color={useColorModeValue('grey', 'grey')}
                     _hover={{ color: useColorModeValue('black', 'white') }} />
                     <MenuList color={'white'} bg="#191919">
+                        <NextLink href="/" passHref>
+                            <MenuItem as={Link}>Home</MenuItem>
+                        </NextLink>
                         <NextLink href="/about" passHref>
                             <MenuItem as={Link}>About</MenuItem>
                         </NextLink>
