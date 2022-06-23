@@ -1,11 +1,13 @@
 import NextLink from 'next/link'
 import { MdHome } from "react-icons/md"
+import Header from '../components/header'
 import { Box, Heading, Container, Divider, Button} from '@chakra-ui/react'
 
-const NotFound = () => {
+const Projects = () => {
   return (
     <Container>
-      <Heading as="h1" align="center" p={12}>Error 404 - Not found</Heading>
+        <Header title="Tenshi - Projects" />
+      <Heading as="h1" align="center" p={12}>Projects are not implemented yet</Heading>
       <Divider my={6} />
       <Box my={6} align="center" p={4}>
         <NextLink href="/" passHref>
@@ -18,4 +20,4 @@ const NotFound = () => {
   )
 }
 
-export default NotFound
+export default Projects
