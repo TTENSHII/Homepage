@@ -1,5 +1,4 @@
 import Logo from './logo'
-import NextLink from 'next/link'
 import { IoLogoGithub } from 'react-icons/io5'
 import { Container, Box, HStack } from '@chakra-ui/react';
 import ThemeButton from './navbarThemeBtn'

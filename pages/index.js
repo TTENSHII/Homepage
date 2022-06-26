@@ -1,5 +1,4 @@
 import Header from "../components/header";
-import { Container } from "@chakra-ui/react";
 
 const Home = () => {
     return (
@@ -7,7 +6,9 @@ const Home = () => {
         <Header title="index" />
         <h1 className="title">
             HELLO <rainbow>THERE</rainbow><br></br>
-            <notimplemented>Home is not implemented</notimplemented>
+            <notimplemented>
+              this page is not finished like the whole site
+              </notimplemented>
         </h1>
         <div className="grid">
             <a href="/about" className="card">
