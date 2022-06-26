@@ -1,21 +1,21 @@
 import NextLink from 'next/link'
 import { MdHome } from "react-icons/md"
-import { Box, Heading, Container, Divider, Button} from '@chakra-ui/react'
 import Header from '../components/header'
+import { Box, Heading, Container, Divider, Button} from '@chakra-ui/react'
 
 const NotFound = () => {
-  return (
-    <Container>
+    return (
+      <Container>
         <Header title="Tenshi - About" />
-      <Heading as="h1" align="center" p={12}>About is not implemented yet</Heading>
-      <Divider my={6} />
-      <Box my={6} align="center" p={4}>
-        <NextLink href="/" passHref>
-        <Button leftIcon={<MdHome />} colorScheme='blue' variant='outline'>
-            Go back to home
-        </Button>
-        </NextLink>
-      </Box>
+        <Heading as="h1" align="center" p={12}>404 error | Not found</Heading>
+        <Divider/>
+        <Box my={6} align="center" p={7}>
+          <NextLink href="/" passHref>
+            <Button leftIcon={<MdHome />} colorScheme='blue' variant='outline'>
+              Return to home
+            </Button>
+          </NextLink>
+        </Box>
     </Container>
   );
 }
