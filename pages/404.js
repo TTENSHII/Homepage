@@ -1,6 +1,7 @@
 import NextLink from 'next/link'
 import { MdHome } from "react-icons/md"
 import { Box, Heading, Container, Divider, Button} from '@chakra-ui/react'
+import Header from '../components/header'
 
 const NotFound = () => {
   return (
