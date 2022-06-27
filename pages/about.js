@@ -3,16 +3,27 @@ import { Box, Heading, Text, Container, Grid, GridItem, Link } from '@chakra-ui/
 import toolsArray from '/tools/tools.js';
 import Icon from '@chakra-ui/icon';
 import Section from '../components/section'
+import Skills from '/components/skills'
 
 const About = () => {
   return (
-    <Container>
+    <Container maxW={{ base: '30rem', sm: '30rem', md: '35rem' }} p={0}>
       <Header title="Tenshi - About" />
       <Box>
         <Box paddingTop={6} paddingBottom={6}>
           <Intro />
         </Box>
-        <Box paddingTop={6} paddingBottom={6}>
+        <Box paddingTop={6}>
+        <Section delay={0.2}>
+          <Heading mb="1.5rem" as="h3" variant="h3">
+            Tools & Technologies
+          </Heading>
+          <Text mb="3rem">
+            The languages and tools that I use the most for my projects.
+          </Text>
+        </Section>
+        </Box>
+        <Box paddingTop={1} paddingBottom={6} marginLeft={-10}>
           <Skills />
         </Box>
       </Box>
@@ -27,7 +38,6 @@ const Intro = () => {
       <Heading mb="1.5rem" as="h3" variant="h3">
       About me
       </Heading>
-      <Container maxW={{ base: '20rem', sm: '30rem', md: '40rem' }} p={0}>
         <Text mb="2rem">
           Hey there! I’m a second year student at Epitech.
           I'm currently passionate about programming and I've at
@@ -44,53 +54,9 @@ const Intro = () => {
           I also like to learn new languages, especially those
           with characters like Japanese, Chinese and Korean.
         </Text>
-      </Container>
     </Box>
     </Section>
   );
 };
-
-const Tool = ({ name, icon, color }) => {
-  return (
-    <Section delay={0.2}>
-    <GridItem p={{ base: '0.5rem', '2xl': '1rem' }}
-      textAlign="center" display="flex" flexDirection="column" transitionDuration="100ms"
-      listStyleType="none" as="li" _hover={{
-        transform: 'scale(1.2)',
-        transition: 'transform 300ms ease-in-out',
-        color: color
-      }} >
-      <Icon mb="0.5rem" boxSize={{ base: '2rem', lg: '3rem', '2xl': '4rem' }}
-      mx="auto" as={icon}/>
-      {name}
-    </GridItem>
-    </Section>
-  );
-};
-
-const Skills = () => {
-  return (
-    <Section delay={0.2}>
-    <Box as="section" >
-      <Heading mb="1.5rem" as="h3" variant="h3">
-        Tools & Technologies
-      </Heading>
-      <Text mb="3rem">
-        The languages and tools that I use the most for my projects.
-      </Text>
-      <Grid templateColumns={{ md: 'repeat(4, 1fr)', base: 'repeat(3, 1fr)' }} gap={4}>
-        {toolsArray.map((skill) => (
-          <Tool
-            name={skill.name}
-            icon={skill.icon}
-            color={skill.color}
-            key={skill.id} />
-        ))}
-      </Grid>
-    </Box>
-    </Section>
-  );
-};
-
 
 export default About;
