@@ -2,86 +2,103 @@ import { SiHtml5, SiCss3, SiJavascript, SiReact, SiNodedotjs, SiNextdotjs, SiAdo
 SiChakraui, SiC, SiCplusplus, SiCsharp, SiGit, SiUnity, SiVisualstudiocode, SiFedora, SiWindows
 } from 'react-icons/si';
 
-export const html5 = {
+const html5 = {
   name: 'HTML5',
   icon: SiHtml5,
   color: '#E34F26',
   id: 1
 };
 
-export const git = {
+const git = {
   name: 'Git',
   icon: SiGit,
   color: '#E34F26',
   id: 2
 }
 
-export const c = {
+const c = {
   name: 'C',
   icon: SiC,
   color: '#0078d7',
   id: 3
 };
 
-export const csharp = {
+const csharp = {
   name: 'C#',
   icon: SiCsharp,
   color: '#9b4993',
   id: 4
 }
 
-export const css3 = {
+const css3 = {
   name: 'CSS3',
   icon: SiCss3,
   color: '#1572B6',
   id: 5
 };
 
-export const js = {
+const js = {
   name: 'JavaScript',
   icon: SiJavascript,
   color: '#F7DF1E',
   id: 6
 };
 
-export const react = {
+const react = {
   name: 'React',
   icon: SiReact,
   color: '#61DAFB',
   id: 7
 };
 
-export const nodejs = {
+const nodejs = {
   name: 'Node.js',
   icon: SiNodedotjs,
   color: '#339933',
   id: 8
 };
 
-export const nextjs = {
+const nextjs = {
   name: 'Next.js',
   icon: SiNextdotjs,
   color: null,
   id: 9
 };
 
-export const chakra = {
+const chakra = {
   name: 'Chakra UI',
   icon: SiChakraui,
   color: '#319795',
   id: 10
 };
 
-export const adobe = {
+const adobe = {
   name: 'Adobe',
   icon: SiAdobe,
   color: '#FF0000',
   id: 11
 };
 
-export const vscode = {
+const vscode = {
   name: 'Vscode',
   icon: SiVisualstudiocode,
   color: '#0078d7',
   id: 12
 };
+
+const toolsArray = [
+  html5,
+  git,
+  c,
+  csharp,
+  css3,
+  js,
+  react,
+  nodejs,
+  nextjs,
+  chakra,
+  adobe,
+  vscode
+];
+
+export default toolsArray;

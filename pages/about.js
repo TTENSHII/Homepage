@@ -1,7 +1,6 @@
 import Header from '../components/header'
 import { Box, Heading, Text, Container, Grid, GridItem, Link } from '@chakra-ui/react';
-import { FaDiscord } from 'react-icons/fa';
-import * as tools from '/tools/tools.js';
+import toolsArray from '/tools/tools.js';
 import Icon from '@chakra-ui/icon';
 import Section from '../components/section'
 
@@ -15,9 +14,6 @@ const About = () => {
         </Box>
         <Box paddingTop={6} paddingBottom={6}>
           <Skills />
-        </Box>
-        <Box paddingBottom={6}>
-          <Contact />
         </Box>
       </Box>
     </Container>
@@ -54,33 +50,7 @@ const Intro = () => {
   );
 };
 
-const Skills = () => {
-  const toolArray = Object.values(tools).slice(0, 16);
-  return (
-    <Section delay={0.2}>
-    <Box as="section">
-      <Heading mb="1.5rem" as="h3" variant="h3">
-        Tools & Technologies
-      </Heading>
-      <Text mb="3rem">
-        The languages and tools that I use the most for my projects.
-      </Text>
-      <Grid templateColumns={{ md: 'repeat(4, 1fr)', base: 'repeat(3, 1fr)' }} gap={4} >
-        {toolArray.map((skill) => (
-          <Skill
-            name={skill.name}
-            icon={skill.icon}
-            color={skill.color}
-            key={skill.id}
-          />
-        ))}
-      </Grid>
-    </Box>
-    </Section>
-  );
-};
-
-const Skill = ({ name, icon, color }) => {
+const Tool = ({ name, icon, color }) => {
   return (
     <Section delay={0.2}>
     <GridItem p={{ base: '0.5rem', '2xl': '1rem' }}
@@ -98,25 +68,29 @@ const Skill = ({ name, icon, color }) => {
   );
 };
 
-const Contact = () => {
+const Skills = () => {
   return (
-    <Section delay={0.3}>
-    <Box as="section">
-      <Heading mb="4" w={{ base: '90%', sm: '100%' }} as="h1" variant="h1">
-        Contact
+    <Section delay={0.2}>
+    <Box as="section" >
+      <Heading mb="1.5rem" as="h3" variant="h3">
+        Tools & Technologies
       </Heading>
-      <Container maxW={{ base: '20rem', sm: '30rem', md: '40rem' }} p={0}>
-        <Text mb="1rem">
-          Contact me on discord.
-        </Text>
-        <Box as="a" display='flex' alignItems={'center'} justify-content='space-between' mb={'2rem'}>
-            <FaDiscord size="2rem" />
-            <p>&nbsp; 天使 | Tenshi#9999</p>
-        </Box>
-      </Container>
+      <Text mb="3rem">
+        The languages and tools that I use the most for my projects.
+      </Text>
+      <Grid templateColumns={{ md: 'repeat(4, 1fr)', base: 'repeat(3, 1fr)' }} gap={4}>
+        {toolsArray.map((skill) => (
+          <Tool
+            name={skill.name}
+            icon={skill.icon}
+            color={skill.color}
+            key={skill.id} />
+        ))}
+      </Grid>
     </Box>
     </Section>
   );
 };
+
 
 export default About;
